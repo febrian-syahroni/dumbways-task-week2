@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo-menu">
+        <a href="/index.html">
+          <img class="logo" src="/assets/logo.png" alt="fs" />
+        </a>
+        <div class="navlink">
+          <a href="/">Home</a>
+          <a href="/projects.html">My Projects</a>
+          <a href="/testimonials.html">Testimonials</a>
+        </div>
+      </div>
+      <a href="/contact.html">
+        <button style="padding: 10px 30px">Contact Me</button>
+      </a>
+      <img
+        onclick="toggle()"
+        class="hamburger"
+        src="/assets/bars-solid.svg"
+        alt="hamburger" />
+    </nav>
+
+    <!-- Navlink -->
+    <div id="dropdown" class="dropdown">
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">My Projects</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/contact.html"><h6>Contact Me</h6></a>
+    </div>
+
+    <!-- Contents -->
+    <section>
+      <h1>GET IN TOUCH</h1>
+      <form id="form-contact">
+        <!-- Name -->
+        <div id="nameColumn" class="container">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <!-- Email -->
+        <div id="emailColumn" class="container">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <!-- Phone Number -->
+        <div id="phoneColumn" class="container">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="number" />
+        </div>
+        <!-- Subject -->
+        <div id="subjectColumn" class="container">
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option hidden></option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Fullstack Developer</option>
+          </select>
+        </div>
+        <!-- Message -->
+        <div id="messageColumn" class="container">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button
+          style="display: block"
+          class="submit"
+          type="button"
+          onclick="getData()">
+          submit
+        </button>
+      </form>
+    </section>
+  </body>
+  <script src="/js/contact.js"></script>
+  <script src="/js/navbar.js"></script>
+</html>

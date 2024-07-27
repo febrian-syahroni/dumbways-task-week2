@@ -1,0 +1,96 @@
+body {
+  background-color: gainsboro;
+}
+
+section {
+  display: grid;
+  gap: 20px;
+  padding: 100px 0;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.square {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 1px 10px 0 red;
+  padding: 5px 15px;
+  line-height: 0;
+  height: 100%;
+  color: white;
+}
+
+.square:active {
+  transform: scale(0.9);
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 gray;
+  display: grid;
+  padding: 20px;
+}
+
+.image {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 190px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: medium;
+}
+
+h4 {
+  text-align: end;
+  line-height: 0;
+}
+
+h5 {
+  margin-bottom: auto;
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .square {
+    font-size: large;
+    padding: 6px 15px;
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+}

@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: gainsboro;
+}
+
+img {
+  cursor: pointer;
+}
+
+p {
+  font-size: x-large;
+}
+
+a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 2px 0 gray;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+}
+
+.container {
+  width: 100%;
+  padding: 150px 0;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 550px;
+  height: 1100px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px 1px gray;
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-cv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}

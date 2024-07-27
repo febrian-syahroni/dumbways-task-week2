@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Febrian Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo-menu">
+        <a href="/index.html">
+          <img class="logo" src="/assets/logo.png" alt="fs" />
+        </a>
+        <div class="navlink">
+          <a href="/" style="font-weight: bold">Home</a>
+          <a href="/projects.html">My Projects</a>
+          <a href="/testimonials.html">Testimonials</a>
+        </div>
+      </div>
+      <a href="/contact.html">
+        <button style="padding: 10px 30px">Contact Me</button>
+      </a>
+      <img
+        onclick="toggle()"
+        class="hamburger"
+        src="/assets/bars-solid.svg"
+        alt="hamburger" />
+    </nav>
+
+    <!-- Navlink -->
+    <div id="dropdown" class="dropdown">
+      <a href="/index.html" style="font-weight: bold">Home</a>
+      <a href="/projects.html">My Projects</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/contact.html">
+        <h6>Contact Me</h6>
+      </a>
+    </div>
+
+    <!-- Contents -->
+    <div class="container">
+      <div class="card">
+        <!-- Descriptions -->
+        <div class="descriptions">
+          <div>
+            <h1>Hi Welcome to my hut</h1>
+            <p style="text-align: justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              nemo laboriosam maxime sint voluptates modi quaerat cumque
+              aperiam, accusamus a! Tempore eos, aut blanditiis adipisci
+              laudantium voluptatum culpa asperiores consequuntur ad id maxime
+              quia fugiat repellat eius, laborum consequatur provident! Sapiente
+              corrupti, eveniet amet ex accusamus iure fugit, eaque alias,
+              dolorem quas facere corporis atque ut voluptatibus inventore! Quia
+              esse ad laudantium enim minima harum quos quod possimus!
+            </p>
+          </div>
+
+          <div class="contact-cv">
+            <a href="/contact.html">
+              <button style="padding: 8px 30px; border-radius: 100px">
+                contact
+              </button>
+            </a>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <a target="_blank" href="/cv.html">download CV</a>
+              <img
+                src="/assets/download.png"
+                style="width: 20px; height: 20px"
+                alt="download" />
+            </div>
+          </div>
+
+          <!-- icons -->
+          <div class="icons">
+            <!-- Linked In -->
+            <a href="https://linkedin.com/" target="_blank">
+              <img
+                src="/assets/linkedin.png"
+                style="width: 40px"
+                alt="Linked in" />
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                src="/assets/instagram.png"
+                style="width: 40px"
+                alt="Instagram" />
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://web.facebook.com/" target="_blank">
+              <img
+                src="/assets/facebook.png"
+                style="width: 40px"
+                alt="Facebook" />
+            </a>
+
+            <!-- twitter -->
+            <a href="https://x.com/?lang=en-id" target="_blank">
+              <img
+                src="/assets/twitter.png"
+                style="width: 40px"
+                alt="Twitter" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+          ">
+          <!-- Name and Title -->
+          <div
+            style="
+              border-radius: 12px;
+              width: 300px;
+              overflow: hidden;
+              border: gray;
+              box-shadow: 0 0 150px 1px rgba(0, 0, 0, 0.2);
+            ">
+            <img src="/assets/febrian.jpg" style="width: 300px" alt="foto" />
+            <h1 style="text-align: center">Febrian Syahroni</h1>
+            <p style="text-align: center; margin-top: -20px">
+              Fullstack Developer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/js/navbar.js"></script>
+</html>

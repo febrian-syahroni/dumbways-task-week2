@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+img {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: papayawhip;
+  padding: 0 50px;
+  box-shadow: 0 0px 5px 0 gray;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navlink {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  width: 50px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0px 2px 0 gray;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown {
+  position: sticky;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  top: 100px;
+  background-color: goldenrod;
+}
+
+.dropdown a {
+  font-size: xx-large;
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+.dropdown a h6 {
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  width: 250px;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 1px 1px 0 gray;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navlink {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+}

@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/testimonials.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo-menu">
+        <a href="/index.html">
+          <img class="logo" src="/assets/logo.png" alt="fs" />
+        </a>
+        <div class="navlink">
+          <a href="/">Home</a>
+          <a href="/projects.html">My Projects</a>
+          <a href="/testimonials.html" style="font-weight: bold"
+            >Testimonials</a
+          >
+        </div>
+      </div>
+      <a href="/contact.html">
+        <button style="padding: 10px 30px">Contact Me</button>
+      </a>
+      <img
+        onclick="toggle()"
+        class="hamburger"
+        src="/assets/bars-solid.svg"
+        alt="hamburger" />
+    </nav>
+
+    <!-- Navlink -->
+    <div id="dropdown" class="dropdown">
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">My Projects</a>
+      <a href="/testimonials.html" style="font-weight: bold">Testimonials</a>
+      <a href="/contact.html">
+        <h6>Contact Me</h6>
+      </a>
+    </div>
+
+    <!-- Testimonials -->
+    <section>
+      <div style="text-align: center">
+        <h1>My Testimonials</h1>
+        <h2>Rating By Star</h2>
+      </div>
+      <div class="rating">
+        <div onclick="app.fetchDataWithDelay()" class="square">All</div>
+        <div onclick="app.filterByRating(1)" class="square">1⭐</div>
+        <div onclick="app.filterByRating(2)" class="square">2⭐</div>
+        <div onclick="app.filterByRating(3)" class="square">3⭐</div>
+        <div onclick="app.filterByRating(4)" class="square">4⭐</div>
+        <div onclick="app.filterByRating(5)" class="square">5⭐</div>
+      </div>
+
+      <div id="container" class="container">
+        <!-- Cards -->
+      </div>
+    </section>
+  </body>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/oop-testimoni.js"></script>
+</html>

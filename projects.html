@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <title>Febrian's Projects</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo-menu">
+        <a href="/index.html">
+          <img class="logo" src="/assets/logo.png" alt="fs" />
+        </a>
+        <div class="navlink">
+          <a href="/">Home</a>
+          <a href="/projects.html" style="font-weight: bold">My Projects</a>
+          <a href="/testimonials.html">Testimonials</a>
+        </div>
+      </div>
+      <a href="/contact.html">
+        <button style="padding: 10px 30px">Contact Me</button>
+      </a>
+      <img
+        onclick="toggle()"
+        class="hamburger"
+        src="/assets/bars-solid.svg"
+        alt="hamburger" />
+    </nav>
+
+    <!-- Navlink -->
+    <div id="dropdown" class="dropdown">
+      <a href="/index.html">Home</a>
+      <a href="/projects.html" style="font-weight: bold">My Projects</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/contact.html"><h6>Contact Me</h6></a>
+    </div>
+
+    <!-- Contents -->
+    <div class="container">
+      <h1>ADD MY PROJECT</h1>
+      <form id="projectForm" onsubmit="getData(event)">
+        <!-- Project Name -->
+        <div class="label-input">
+          <label for="projectName">Project Name</label>
+          <input type="text" id="projectName" />
+        </div>
+
+        <!-- Date Time -->
+        <div class="timezone">
+          <div class="input-timezone">
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" />
+          </div>
+
+          <div class="input-timezone">
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" />
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="label-input">
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+
+        <!-- Technologies -->
+        <div class="label-input">
+          <label>Technologies</label>
+          <div class="checkbox-container">
+            <div class="gap-column">
+              <label class="checklist" for="checklist">
+                <input
+                  type="checkbox"
+                  value="Node JS"
+                  name="checklist"
+                  id="checklist" />
+                Node JS
+              </label>
+
+              <label class="checklist" for="checklist">
+                <input
+                  type="checkbox"
+                  value="React JS"
+                  name="checklist"
+                  id="checklist" />
+                React JS
+              </label>
+            </div>
+
+            <div class="gap-column">
+              <label class="checklist" for="checklist">
+                <input
+                  type="checkbox"
+                  value="Next JS"
+                  name="checklist"
+                  id="checklist" />
+                Next JS
+              </label>
+
+              <label class="checklist" for="checklist">
+                <input
+                  type="checkbox"
+                  value="TypeScript"
+                  name="checklist"
+                  id="checklist" />
+                TypeScript
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload Images -->
+        <div class="label-input">
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" />
+        </div>
+        <button style="display: block" class="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Detail Projects -->
+    <div style="background-color: cornsilk" class="container">
+      <h1>MY PROJECTS</h1>
+      <div id="addProject" class="card-container"></div>
+    </div>
+  </body>
+  <script src="/js/projects.js"></script>
+  <script src="/js/navbar.js"></script>
+</html>
