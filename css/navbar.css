@@ -1,6 +1,13 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  background-color: gainsboro;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 img {
@@ -8,16 +15,16 @@ img {
 }
 
 nav {
+  display: flex;
   position: fixed;
-  top: 0;
+  justify-content: space-between;
+  background-color: papayawhip;
+  box-shadow: 0 0px 5px 0 gray;
+  align-items: center;
+  padding: 0 50px;
   z-index: 999;
   width: 93%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: papayawhip;
-  padding: 0 50px;
-  box-shadow: 0 0px 5px 0 gray;
+  top: 0;
 }
 
 .logo-menu {
@@ -30,7 +37,6 @@ nav {
 
 .logo {
   width: 50px;
-  height: 50px;
 }
 
 .navlink {
@@ -48,7 +54,6 @@ a {
 .hamburger {
   display: none;
   width: 50px;
-  padding: 10px;
 }
 
 button {
@@ -68,28 +73,29 @@ button:hover {
 
 .dropdown {
   position: sticky;
+  z-index: 9999;
   overflow: hidden;
   display: none;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   text-align: center;
-  top: 100px;
+  top: 60px;
   background-color: goldenrod;
 }
 
 .dropdown a {
-  font-size: xx-large;
-  padding: 25px 0;
+  font-size: large;
+  padding: 10px 0;
   cursor: pointer;
 }
 
 .dropdown a h6 {
-  font-size: xx-large;
+  font-size: medium;
   background-color: black;
   color: white;
   padding: 10px 0;
-  width: 250px;
+  width: 150px;
   border-radius: 8px;
   margin: auto;
   box-shadow: 0 1px 1px 0 gray;
@@ -97,8 +103,11 @@ button:hover {
 
 @media (max-width: 768px) {
   .logo {
-    width: 100px;
-    height: 100px;
+    scale: 100%;
+  }
+
+  nav {
+    width: screen;
   }
 
   button {
@@ -111,6 +120,7 @@ button:hover {
 
   .hamburger {
     display: block;
+    scale: 50%;
   }
 
   .dropdown {

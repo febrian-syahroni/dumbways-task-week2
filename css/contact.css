@@ -7,7 +7,7 @@ section {
   font-family: sans-serif;
   flex-direction: column;
   height: 100vh;
-  padding-top: 70px;
+  padding: 70px 0;
   align-items: center;
   justify-content: center;
 }
@@ -72,4 +72,33 @@ textarea {
   border-radius: 100px;
   margin-left: auto;
   font-size: medium;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  form {
+    width: 90%;
+    .container {
+      font-size: small;
+    }
+
+    input {
+      font-size: small;
+    }
+
+    option {
+      font-size: small;
+    }
+
+    select {
+      font-size: small;
+    }
+  }
 }

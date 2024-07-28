@@ -1,7 +1,12 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
   background-color: gainsboro;
+  font-family: sans-serif;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 img {
@@ -36,22 +41,22 @@ button:hover {
 }
 
 .container {
-  width: 100%;
-  padding: 150px 0;
   justify-content: center;
+  padding: 90px 0;
   display: flex;
+  width: 60%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  padding: 0 70px;
+  padding: 50px 70px;
   gap: 50px;
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 550px;
-  height: 1100px;
+  /* width: 550px; */
+  /* height: 1100px; */
   border-radius: 10px;
   box-shadow: 0px 20px 30px 1px gray;
 }
@@ -68,9 +73,106 @@ button:hover {
   gap: 30px;
 }
 
+.contact-cv img {
+  width: 20px;
+}
+
 .icons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   gap: 20px;
+}
+
+.icons img {
+  width: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.profile img {
+  width: 300px;
+}
+
+.name-title {
+  border-radius: 12px;
+  width: 300px;
+  overflow: hidden;
+  border: gray;
+  box-shadow: 0 0 150px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* scale: 80%; */
+    width: 90%;
+    padding: 130px 0;
+    margin-top: -80px;
+  }
+
+  .card {
+    /* width: %; */
+    padding: 20px 30px;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+
+  p {
+    font-size: x-small;
+  }
+
+  .contact-cv {
+    gap: 15px;
+  }
+
+  .contact-cv a {
+    font-size: x-small;
+  }
+
+  .contact-cv a button {
+    display: flex;
+    font-size: xx-small;
+    justify-content: center;
+    line-height: 5px;
+    width: 70px;
+  }
+
+  .contact-cv img {
+    width: 12px;
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  .icons img {
+    width: 20px;
+  }
+
+  .name-title {
+    width: 90%;
+  }
+
+  .profile img {
+    width: 100%;
+  }
+
+  .name-title {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }

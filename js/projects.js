@@ -92,7 +92,7 @@ const checkIfEmpty = () => {
   const container = document.getElementById("addProject");
   if (projects.length === 0) {
     container.innerHTML =
-      "<p style='margin: auto; color: gray'>No projects available</p>";
+      "<p style='grid-column: span 2 / span 2; margin: auto; color: gray'>No projects available</p>";
   } else {
     const message = container.querySelector("p");
     message.remove();

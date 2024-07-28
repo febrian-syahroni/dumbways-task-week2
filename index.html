@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Febrian Website</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
@@ -12,7 +15,7 @@
           <img class="logo" src="/assets/logo.png" alt="fs" />
         </a>
         <div class="navlink">
-          <a href="/" style="font-weight: bold">Home</a>
+          <a href="/" style="background-color: gray; color: brown">Home</a>
           <a href="/projects.html">My Projects</a>
           <a href="/testimonials.html">Testimonials</a>
         </div>
@@ -29,7 +32,9 @@
 
     <!-- Navlink -->
     <div id="dropdown" class="dropdown">
-      <a href="/index.html" style="font-weight: bold">Home</a>
+      <a href="/index.html" style="background-color: gray; color: brown"
+        >Home</a
+      >
       <a href="/projects.html">My Projects</a>
       <a href="/testimonials.html">Testimonials</a>
       <a href="/contact.html">
@@ -62,12 +67,9 @@
                 contact
               </button>
             </a>
-            <div style="display: flex; gap: 10px; align-items: center">
+            <div class="download-cv">
               <a target="_blank" href="/cv.html">download CV</a>
-              <img
-                src="/assets/download.png"
-                style="width: 20px; height: 20px"
-                alt="download" />
+              <img src="/assets/download.png" alt="download" />
             </div>
           </div>
 
@@ -75,57 +77,33 @@
           <div class="icons">
             <!-- Linked In -->
             <a href="https://linkedin.com/" target="_blank">
-              <img
-                src="/assets/linkedin.png"
-                style="width: 40px"
-                alt="Linked in" />
+              <img src="/assets/linkedin.png" alt="Linked in" />
             </a>
 
             <!-- Instagram -->
             <a href="https://www.instagram.com/" target="_blank">
-              <img
-                src="/assets/instagram.png"
-                style="width: 40px"
-                alt="Instagram" />
+              <img src="/assets/instagram.png" alt="Instagram" />
             </a>
 
             <!-- Facebook -->
             <a href="https://web.facebook.com/" target="_blank">
-              <img
-                src="/assets/facebook.png"
-                style="width: 40px"
-                alt="Facebook" />
+              <img src="/assets/facebook.png" alt="Facebook" />
             </a>
 
             <!-- twitter -->
             <a href="https://x.com/?lang=en-id" target="_blank">
-              <img
-                src="/assets/twitter.png"
-                style="width: 40px"
-                alt="Twitter" />
+              <img src="/assets/twitter.png" alt="Twitter" />
             </a>
           </div>
         </div>
 
         <!-- Profile -->
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 50px;
-          ">
+        <div class="profile">
           <!-- Name and Title -->
-          <div
-            style="
-              border-radius: 12px;
-              width: 300px;
-              overflow: hidden;
-              border: gray;
-              box-shadow: 0 0 150px 1px rgba(0, 0, 0, 0.2);
-            ">
-            <img src="/assets/febrian.jpg" style="width: 300px" alt="foto" />
+          <div class="name-title">
+            <div>
+              <img src="/assets/febrian.jpg" alt="foto" />
+            </div>
             <h1 style="text-align: center">Febrian Syahroni</h1>
             <p style="text-align: center; margin-top: -20px">
               Fullstack Developer

@@ -61,7 +61,7 @@ class App {
   // Fetching data with async await
   async fetchDataWithDelay() {
     // Display the message before display data
-    this.container.innerHTML = "<h1>Loading...</h1>";
+    this.container.innerHTML = "<h3>Loading...</h3>";
     // Simulate delay with setTimeout()
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
@@ -83,7 +83,7 @@ class App {
     setTimeout(() => {
       this.displayData(filteredData);
     }, 2000);
-    this.container.innerHTML = "<h1>Loading...</h1>";
+    this.container.innerHTML = "<h3>Loading...</h3>";
   }
 }
 

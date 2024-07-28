@@ -83,9 +83,8 @@ textarea {
 }
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 910px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 50px 20px;
 }
 
@@ -95,7 +94,7 @@ textarea {
   background-color: white;
   text-wrap: wrap;
   width: 250px;
-  height: 100%;
+  height: auto;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 5px 6px 0 gray;
@@ -116,7 +115,19 @@ textarea {
   gap: 5px;
 }
 
+.Technologies checklist {
+  background-color: gray;
+  box-shadow: 1px 1px 2px 0 black;
+  color: yellow;
+  font-size: x-small;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
 .checklist {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 300;
 }
 
@@ -132,26 +143,65 @@ textarea {
 
 @media (max-width: 768px) {
   .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    gap: 80px;
+    width: 90%;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    width: auto;
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .thumbnail {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: larger;
+  }
+
+  h4 {
+    font-size: small;
   }
 
   form {
     width: 80%;
-    font-size: x-large;
+    font-size: medium;
   }
 
   input,
   textarea {
-    font-size: x-large;
+    font-size: small;
   }
 
-  textarea {
-    height: 200px;
+  .Technologies checklist {
+    font-size: 6px;
+    line-height: 0;
+  }
+
+  .checklist {
+    font-size: small;
   }
 
   .checklist input {
     width: 20px;
     height: 20px;
+  }
+
+  .custom-btn {
+    justify-content: space-evenly;
+    margin: 8px 0;
+    button {
+      font-size: 8px;
+      border-radius: 4px;
+      width: 40%;
+      gap: 0;
+    }
   }
 }
