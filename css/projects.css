@@ -170,6 +170,10 @@ textarea {
     font-size: small;
   }
 
+  p {
+    font-size: xx-small;
+  }
+
   form {
     width: 80%;
     font-size: medium;
